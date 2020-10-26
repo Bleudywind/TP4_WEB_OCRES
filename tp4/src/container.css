@@ -1,0 +1,27 @@
+.allButtons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.bouton {
+
+    
+    
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+}
+
+.borderPost {
+    padding: 30px;
+    margin: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
