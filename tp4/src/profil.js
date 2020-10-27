@@ -5,7 +5,7 @@ function changeBack (props) {
     var randomColor = require('randomcolor');
     var color = randomColor();
     document.getElementById('backgroud-color').style.background = color;
-    props.value.profilColor = color;
+   
 }
 
 function ChangeStyle(props) {
@@ -17,9 +17,9 @@ function ChangeStyle(props) {
 }
 
 function renderBackgroud (props) {
-    return (
-        document.getElementById('backgroud-color').style.background = props.value.profilColor
-    );
+    
+    document.getElementById('backgroud-color').style.background = props.value.profilColor;
+    
 }
 
 function PersonnalInformation (props) {
@@ -51,7 +51,7 @@ function Profil (props) {
         return (
             <div className="profil">
                 <div className="borderProfil" id="backgroud-color">
-                    {renderBackgroud(props)}
+                    {() => renderBackgroud(props.value)}
                     <div className="pic">
                         <ProfilPic value={props.value} />
                     </div>
@@ -59,7 +59,7 @@ function Profil (props) {
                         <PersonnalInformation value={props.value} />
                     </div>
                     <div className="buttonContainer">
-                        <ChangeStyle value={props.value}/>
+                        <ChangeStyle value={props}/>
                     </div>
                 </div>
                 
