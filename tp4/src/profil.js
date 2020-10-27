@@ -1,16 +1,25 @@
 import React from "react";
 import './profil.css';
 
-function changeBack () {
-    document.getElementById('borderProfil').style.background = "red";
+function changeBack (props) {
+    var randomColor = require('randomcolor');
+    var color = randomColor();
+    document.getElementById('backgroud-color').style.background = color;
+    props.value.profilColor = color;
 }
 
-function ChangeStyle() {
+function ChangeStyle(props) {
 
         return (
-            <button onClick={() => changeBack()}> Change Style </button>
+            <button onClick={() => changeBack(props)}> Change Style </button>
         );
         
+}
+
+function renderBackgroud (props) {
+    return (
+        document.getElementById('backgroud-color').style.background = props.value.profilColor
+    );
 }
 
 function PersonnalInformation (props) {
@@ -41,7 +50,8 @@ function ProfilPic(props) {
 function Profil (props) {
         return (
             <div className="profil">
-                <div className="borderProfil">
+                <div className="borderProfil" id="backgroud-color">
+                    {renderBackgroud(props)}
                     <div className="pic">
                         <ProfilPic value={props.value} />
                     </div>
@@ -49,7 +59,7 @@ function Profil (props) {
                         <PersonnalInformation value={props.value} />
                     </div>
                     <div className="buttonContainer">
-                        <ChangeStyle />
+                        <ChangeStyle value={props.value}/>
                     </div>
                 </div>
                 

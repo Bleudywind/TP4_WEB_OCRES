@@ -12,6 +12,7 @@ const Containers = [
         nom : 'Roussel',
         Prenom : 'Louis',
         date : '13/01/98',
+        profilColor : '#F05643',
         post1 : '"Maman, Maman! Le banquier est là. Tu as l’argent ou bien je dois aller jouer dehors?”',
         post2 : 'on se demandait tous d’où venait sa reput’ de tombeur, nous voila sur une bonne piste !',
         post3 : 'Il est l’Or de se réveiller ! #louisdefunès #réveilécologique #tréso',
@@ -21,6 +22,7 @@ const Containers = [
         nom : 'Dessouki',
         Prenom : 'Lucas',
         date : '10/09/98',
+        profilColor : '#FA465B',
         post1 : 'L E G E N D A R Y',
         post2 : 'E D I T I ON',
         post3 : 'https://www.youtube.com/watch?v=wAUK9hVgmNI&feature=share'
@@ -30,6 +32,7 @@ const Containers = [
         nom : 'Grand',
         Prenom : 'Maylinh',
         date : '20/01/99',
+        profilColor : '#E34BA9',
         post1 : '" En mer ou dans votre verre, les mouettes n’auront jamais pied. "',
         post2 : 'Facebook : https://www.facebook.com/noiseece/',
         post3 : 'Insta : https://instagram.com/noiseece?igshid=1g7as6tqsnd3c'
